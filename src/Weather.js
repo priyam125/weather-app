@@ -140,7 +140,7 @@ const Weather = () => {
                     <div className='z-20 flex flex-col md:items-start items-center md:flex-row space-x-10'>
                     <div className='flex flex-col md:w-1/3 w-11/12 items-center justify-center'>
                         <div className='flex items-center justify-center mb-4'>
-                            <div className='text-white text-2xl mr-2'>{place},</div>
+                            <div className='text-white text-2xl mr-2 pad'>{place},</div>
                             <div className='text-gray-500 text-xl'>{country}</div>
                         </div>
                         <div className='flex'>
@@ -160,12 +160,12 @@ const Weather = () => {
                         <div className='text-2xl text-white mb-8 md:mb-0'>{condition}</div>
                     </div>
 
-                    <div className='flex flex-col items-center h-56 md:w-1/6 w-2/3 text-white'>
+                    <div className='flex flex-col items-center h-56 lg:w-1/6 w-2/3 astronomy text-white'>
                         <div className='flex flex-col justify-center items-center'>
                             <div className='text-xl flex flex-col items-center justify-center mb-4'>Astronomy</div>
                             <div className='flex flex-col'>
-                                <div className='text-xl mb-6 '>Sunrise:   {sunrise}</div>
-                                <div className='text-xl '>Sunset:   {sunset}</div>
+                                <div className='text-xl astronomy-text mb-6 '>Sunrise:   {sunrise}</div>
+                                <div className='text-xl astronomy-text '>Sunset:   {sunset}</div>
                             </div>
                         </div>
                         <div className={`flex items-center justify-center py-6 text-xl ${toggle ? 'block' : 'hidden'}`}>
