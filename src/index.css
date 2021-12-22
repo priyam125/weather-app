@@ -1,3 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  min-height: 50%;
+}
+
+@media only screen and (min-width: 1280px) {
+  .chart {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .chart1 {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .chart2 {
+    display: block;
+  }
+}
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
